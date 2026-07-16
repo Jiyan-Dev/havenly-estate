@@ -1,0 +1,112 @@
+.agents-page {
+  padding-top: 100px;
+  padding-bottom: 6rem;
+  background-color: var(--bg-gray);
+  min-height: 100vh;
+}
+
+.agents-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.agents-header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.agents-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.agents-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.agent-profile-card {
+  background: var(--bg-light);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.agent-profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.agent-profile-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.agent-profile-card:hover .agent-profile-image {
+  transform: scale(1.05);
+}
+
+.agent-profile-image-wrap {
+  overflow: hidden;
+}
+
+.agent-profile-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.agent-profile-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+
+.agent-profile-content .specialization {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.agent-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.agent-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-stat-item .stat-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.agent-stat-item .stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.agent-contact-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
