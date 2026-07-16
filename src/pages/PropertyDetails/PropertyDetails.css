@@ -1,0 +1,254 @@
+.property-details-page {
+  background-color: var(--bg-gray);
+  min-height: 100vh;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: var(--primary);
+}
+
+.property-details-content {
+  background: var(--bg-light);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.property-hero-img {
+  width: 100%;
+  height: 50vh;
+  min-height: 400px;
+  position: relative;
+}
+
+.property-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-badge.large {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.save-btn.large {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+}
+
+.property-info-section {
+  padding: 3rem;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.property-title-large {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.property-location-large {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.property-price-large {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.property-meta-large {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+.meta-item strong {
+  color: var(--text-dark);
+}
+
+.property-description {
+  margin-bottom: 3rem;
+}
+
+.property-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.property-description p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .property-hero-img {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .property-info-section {
+    padding: 2rem;
+  }
+  
+  .property-header {
+    flex-direction: column;
+  }
+  
+  .property-title-large {
+    font-size: 2rem;
+  }
+  
+  .property-price-large {
+    font-size: 2rem;
+  }
+  
+  .property-meta-large {
+    gap: 1rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-buttons .btn {
+    width: 100%;
+  }
+}
+
+.tour-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.tour-modal {
+  background: var(--bg-light);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: modal-pop 0.3s ease-out;
+}
+
+@keyframes modal-pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.close-modal-btn:hover {
+  color: var(--text-dark);
+}
+
+.tour-modal h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.tour-modal .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.tour-modal label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.tour-modal input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  background: var(--bg-gray);
+  color: var(--text-dark);
+  font-family: inherit;
+}
+
+.tour-success {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.tour-success h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
