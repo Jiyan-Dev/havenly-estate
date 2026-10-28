@@ -25,7 +25,7 @@
 
 .agents-page-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 2.5rem;
 }
 
@@ -109,4 +109,32 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .agents-page {
+    padding-top: 80px;
+    padding-bottom: 3.5rem;
+  }
+
+  .agents-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .agents-header h1 {
+    font-size: 2rem;
+  }
+
+  .agents-page-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .agent-profile-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .agent-profile-image {
+    height: 240px;
+  }
 }

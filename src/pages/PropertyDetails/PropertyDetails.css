@@ -137,28 +137,48 @@
 
 @media (max-width: 768px) {
   .property-hero-img {
-    height: 40vh;
-    min-height: 300px;
+    height: 35vh;
+    min-height: 260px;
+  }
+
+  .property-badge.large {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .save-btn.large {
+    top: 1rem;
+    right: 1rem;
+    width: 42px;
+    height: 42px;
   }
   
   .property-info-section {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
   }
   
   .property-header {
     flex-direction: column;
+    gap: 0.75rem;
   }
   
   .property-title-large {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
   
   .property-price-large {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
   
   .property-meta-large {
-    gap: 1rem;
+    gap: 1rem 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .meta-item {
+    font-size: 0.95rem;
   }
   
   .action-buttons {
@@ -167,6 +187,33 @@
   
   .action-buttons .btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-info-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .property-title-large {
+    font-size: 1.5rem;
+  }
+
+  .property-price-large {
+    font-size: 1.6rem;
+  }
+
+  .tour-modal {
+    padding: 1.75rem 1.25rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .property-description h3 {
+    font-size: 1.25rem;
+  }
+
+  .property-description p {
+    font-size: 0.95rem;
   }
 }
 

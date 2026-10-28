@@ -174,3 +174,39 @@
     padding: 2.5rem;
   }
 }
+
+@media (max-width: 640px) {
+  .contact-page {
+    padding-top: 80px;
+    padding-bottom: 3.5rem;
+  }
+
+  .contact-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .contact-info, .contact-form-container {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-methods {
+    gap: 1.5rem;
+  }
+
+  .contact-method {
+    gap: 1rem;
+  }
+}

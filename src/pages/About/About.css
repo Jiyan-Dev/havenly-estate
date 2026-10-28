@@ -145,11 +145,52 @@
 @media (max-width: 900px) {
   .about-grid, .mv-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   
   .about-image-block {
-    height: 400px;
+    height: 360px;
     order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    height: 380px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .about-hero p {
+    font-size: 1.05rem;
+  }
+
+  .about-content-section, 
+  .mission-vision-section {
+    padding: 3.5rem 0;
+  }
+
+  .about-text-block h2 {
+    font-size: 1.85rem;
+  }
+
+  .about-image-block {
+    height: 260px;
+  }
+
+  .mv-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .mv-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 1.25rem;
+  }
+
+  .mv-card h3 {
+    font-size: 1.4rem;
   }
 }

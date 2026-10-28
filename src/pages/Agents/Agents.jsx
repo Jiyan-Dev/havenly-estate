@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, Award, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, CheckCircle2 } from 'lucide-react';
 import { agents } from '../../data/mockData';
 import './Agents.css';
 
